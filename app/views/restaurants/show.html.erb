@@ -1,0 +1,8 @@
+<h1>More infos on <%= @restaurant.name %></h1>
+<p>Find us at <%= @restaurant.address %></p>
+<p>
+  <ul>
+    <% @restaurant.reviews.each do |review|%> </p>
+      <li><%= review.content %> <%= review.rating %> / 5</li>
+    <%end %>
+  </ul>
